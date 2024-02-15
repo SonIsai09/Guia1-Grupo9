@@ -52,14 +52,15 @@ switch (clave){
         Console.ReadKey();
         break;
     case "/":
-        if(num1==0&&num2==0){
-            Console.WriteLine("No es divisible entre cero");
-        }
-        else
+        if(num1 != 0 && num2 != 0)
         {
             res = num1 / num2;
             Console.WriteLine("La division de " + num1 + " mas " + num2 + " es: " + res);
             Console.ReadKey();
+        }
+        else
+        {
+            Console.WriteLine("Ingrese un numero desigual a 0");
         }
         break;
     case "R":
