@@ -17,9 +17,9 @@ using System.Resources;
 double num1, num2, res1, res2;
 string clave;
 
-Console.WriteLine("Ingrese el primer numero");
+Console.WriteLine("Ingrese el primer número:");
 num1 = double.Parse(Console.ReadLine());
-Console.WriteLine("Ingrese el segundo numero");
+Console.WriteLine("Ingrese el segundo número:");
 num2 = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Según su necesidad ingrese el signo que desea:");
