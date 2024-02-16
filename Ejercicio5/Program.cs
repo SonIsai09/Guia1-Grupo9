@@ -1,4 +1,5 @@
-/*Cree un programa que solicite 2 números reales y también una clave desde 
+/*
+Cree un programa que solicite 2 números reales y también una clave desde 
 teclado. 
 Según sea la clave deberá realizar la operación con los números solicitados
 Las claves disponibles son las siguientes:
@@ -8,7 +9,8 @@ Las claves disponibles son las siguientes:
 ➢ La clave / realiza una división (Debe validar el no hacer divisiones entre 0).
 ➢ La clave R obtiene la raíz cuadra de ambos números.
 ➢ La clave E eleva el primer numero con el segundo (debe redondear 
-decimales a máximo 3)*/
+decimales a máximo 3)
+*/
 
 using System.Resources;
 

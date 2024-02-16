@@ -1,19 +1,21 @@
 ﻿using System;
-
+/*
+Cree un programa que solicite 2 datos por teclado, estos serán el usuario y
+contraseña, para este ejercicio solo se tienen 3 oportunidades para el ingreso de
+estas credenciales, al realizar las 3 oportunidades el programa se cerrará, debe
+considerar lo siguiente:
+➢ Debe validar que el contenido ingresado no este vacío o sea nulo. 
+➢ Se sabe que las credenciales son: 
+Usuario: PROGRA1
+Password: K0m1d4.
+*/
 namespace Ejercicio2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Cree un programa que solicite 2 datos por teclado, estos serán el usuario y
-            //contraseña, para este ejercicio solo se tienen 3 oportunidades para el ingreso de
-            //estas credenciales, al realizar las 3 oportunidades el programa se cerrará, debe
-            //considerar lo siguiente:
-            //➢ Debe validar que el contenido ingresado no este vacío o sea nulo. 
-            //➢ Se sabe que las credenciales son: 
-            //Usuario: PROGRA1
-            //Password: K0m1d4.
+           
 
             string usuarioCorrecto = "PROGRA1";
             string claveCorrecta = "K0m1d4";
