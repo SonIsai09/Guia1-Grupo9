@@ -6,7 +6,6 @@ almacénelos en sus respectivas variables y determine lo siguiente:
 ser uno de los números anteriormente ingresado o solicite uno nuevo).
 */
 
-
 using System;
 
 namespace Ejercicio1
@@ -23,7 +22,6 @@ namespace Ejercicio1
             num2 = Convert.ToDouble(Console.ReadLine());
             resultado = Math.Max(num1, num2);
             Console.WriteLine("El número mayor es " + resultado);
-
             Console.WriteLine("--------------------------------");
             Console.WriteLine("Ingrese el número Entero a obtener raíz cúbica ");
             numRaiz = int.Parse(Console.ReadLine());

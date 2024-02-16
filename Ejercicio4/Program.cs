@@ -1,6 +1,4 @@
-﻿using System;
-
-/*
+﻿/*
 Cree un programa que solicite un rango de años e imprima en pantalla los años
 que son bisiestos dentro de ese rango establecido.
 ¿Cómo saber si un año es bisiesto?
@@ -10,7 +8,9 @@ que son bisiestos dentro de ese rango establecido.
 ➢ Sin embargo, los años divisibles entre 100 y entre 400 sí que son bisiestos
 */
 
-namespace AñosBisiestos
+using System;
+
+namespace AniosBisiestos
 {
     class Program
     {
@@ -26,16 +26,11 @@ namespace AñosBisiestos
 
             for (int year = inicio; year <= fin; year++)
             {
-                if (EsBisiesto(year))
+                if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
                 {
                     Console.WriteLine(year);
                 }
-            }//
-        }
-
-        static bool EsBisiesto(int year)
-        {
-            return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+            }
         }
     }
 }

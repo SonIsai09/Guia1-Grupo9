@@ -6,7 +6,15 @@ Haciendo uso del operador ternario determine lo siguiente:
 ➢ Si el numero ingresado es cero.
 */
 
-Console.WriteLine("Ingrese un número entero a evaluar (Solo se permiten números enteros):");
-int num = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("El número ingresado es " + (num > 0 ? "POSITIVO" : (num < 0 ? "NEGATIVO" : "CERO")));
+namespace Ejercicio3
+{
+    class Program
+    {
+       static void Main(string[] args)
+        {
+            Console.WriteLine("Ingrese un número entero a evaluar (Solo se permiten números enteros):");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("El número ingresado es " + (num > 0 ? "POSITIVO" : (num < 0 ? "NEGATIVO" : "CERO")));
+        }
+    }
+}

@@ -14,7 +14,7 @@ decimales a máximo 3)
 
 using System.Resources;
 
-double num1, num2, res, res2;
+double num1, num2, res1, res2;
 string clave;
 
 Console.WriteLine("Ingrese el primer numero");
@@ -22,63 +22,61 @@ num1 = double.Parse(Console.ReadLine());
 Console.WriteLine("Ingrese el segundo numero");
 num2 = double.Parse(Console.ReadLine());
 
-Console.WriteLine("Segun su necesidad ingrese el signo que desea: ");
-Console.WriteLine("-Suma   (+)"+"\n-Resta    (-)"+"\n-Multiplicacion    (*)"+"\n-Division"+"\n-Raiz cuadrada de ambos     (R)"+ "\n-Eleva el primer numero con el segundo     (E)");
+Console.WriteLine("Según su necesidad ingrese el signo que desea:");
+Console.WriteLine("-Suma   (+)" + "\n-Resta    (-)" + "\n-Multiplicación    (*)" + "\n-División" + "\n-Raiz cuadrada de ambos     (R)" + "\n-Eleva el primer numero con el segundo     (E)");
 clave = Console.ReadLine();
 
-if (clave == "r"){
+if (clave == "r")
+{
     clave = "R";
 }
-else{
-    if (clave == "e")
-    {
-        clave = "E";
-    }
+else if (clave == "e")
+{
+    clave = "E";    
 }
-
 
 switch (clave){
     case "+":
-        res=num1 + num2;
-        Console.WriteLine("La suma de "+num1+" mas "+num2+" es: "+res);
+        res1 = num1 + num2;
+        Console.WriteLine("La suma de " + num1 + " más " + num2 + " es: " + res1);
         Console.ReadKey();
         break;
     case "-":
-        res=num1 - num2;
-        Console.WriteLine("La resta de " + num1 + " menos " + num2 + " es: " + res);
+        res1=num1 - num2;
+        Console.WriteLine("La resta de " + num1 + " menos " + num2 + " es: " + res1);
         Console.ReadKey();
         break;
     case "*":
-        res=num1 * num2;
-        Console.WriteLine("La multiplicacion de " + num1 + " mas " + num2 + " es: " + res);
+        res1=num1 * num2;
+        Console.WriteLine("La multiplicación de " + num1 + " más " + num2 + " es: " + res1);
         Console.ReadKey();
         break;
     case "/":
         if(num1 != 0 && num2 != 0)
         {
-            res = num1 / num2;
-            Console.WriteLine("La division de " + num1 + " mas " + num2 + " es: " + res);
+            res1 = num1 / num2;
+            Console.WriteLine("La división de " + num1 + " más " + num2 + " es: " + res1);
             Console.ReadKey();
         }
         else
         {
-            Console.WriteLine("Ingrese un numero desigual a 0");
+            Console.WriteLine("Ingrese un número desigual a 0");
         }
         break;
     case "R":
-        res = Math.Sqrt(num1);
+        res1 = Math.Sqrt(num1);
         res2 = Math.Sqrt(num2);
-        Console.WriteLine("La raiz cuadradad de "+num1+" es: "+ res);
-        Console.WriteLine("La raiz cuadradad de " + num2 + " es: " + res2);
+        Console.WriteLine("La raíz cuadrada de " + num1 + " es: " + res1);
+        Console.WriteLine("La raíz cuadrada de " + num2 + " es: " + res2);
         Console.ReadKey();
         break;
     case "E":
-        res = Math.Pow(num1, num2);
-        double resRe = Math.Round(res, 3);
-        Console.WriteLine("Si elevas al cuadrado "+num1+" a la potencia "+num2+" el resultado es: "+resRe);
+        res1 = Math.Pow(num1, num2);
+        double resRe = Math.Round(res1, 3);
+        Console.WriteLine("Si elevas al cuadrado " + num1 + " a la potencia " + num2 + " el resultado es: " + resRe);
         Console.ReadKey();
         break;
     default:
-        Console.WriteLine("Debe ingresar los tipos de claves que se presentan");
+        Console.WriteLine("Debe ingresar los tipos de claves que se presentan.");
         break;
 }
